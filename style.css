@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* base attribute */
+:root {
+    --main-color: #5D9AB2;
+    --accent-color: #BF6A7A;
+    --dark-color: #2B5566;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+* {
+    outline: 1px solid #f00;
+}
+/* 폰트 */
+body {
+    font-family: sans-serif;
+}
+/* 레이아웃 */
+/* 컴포넌트 스타일 작성 */
+.conA {
+    background-image: url("img/fruits.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*margin: 0 auto;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*box-sizing: border-box;*/
+}
+.conA img {
+    width: 20%;
+    margin-bottom: 12px;
+}
+.conA h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15vw;
+    font-weight: bold;
+    color: var(--white-color);
+    margin: 12px 0;
+}
+.conA p {
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--white-color);
+    margin: 12px 0;
+}
+.conA button {
+    background-color: var(--accent-color);
+    border: 1px solid var(--white-color);
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    color: var(--white-color);
+}
+.conA button:hover, .conA button:active {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+@media (min-width: 768px) {
+    .conA h1 {
+        font-size: 115px;
+    }
+    .conA p {
+        font-size: 1.5em;
+    }
+}
+.conB {}
+.conC {}
+.conD {}
