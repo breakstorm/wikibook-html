@@ -12,7 +12,7 @@
 }
 
 * {
-    outline: 1px solid #f00;
+    /*outline: 1px solid #f00;*/
 }
 
 /* 폰트 */
@@ -298,5 +298,132 @@ body {
         flex: 2;
         margin: 0 20px 0 0;
         padding: 20px 0;
+    }
+}
+
+
+/* footer 영역 */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .text {
+    box-sizing: border-box;
+    padding: 40px 20px;
+    color: var(--white-color);
+}
+.footer .text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin: 0 0 12px;
+}
+.footer .text > p {
+    margin-bottom: 12px;
+    font-size: 0.75em;
+    font-weight: normal;
+}
+.footer .text > a {
+    margin-bottom: 12px;
+    font-size: 0.75em;
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.footer .text ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer .text ul li a {
+    margin-right: 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+    display: block;
+    font-size: 1em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.footer .text ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer .text ul li a span {
+    vertical-align: middle;
+}
+
+
+.footer .menu {
+    color: var(--white-color);
+    box-sizing: border-box;
+    padding: 0 12px 40px;
+}
+.footer .menu h3 {
+    margin: 20px 0 0;
+    border-bottom: 1px solid var(--white-color);
+    font-size: 0.75em;
+    font-weight: bold;
+}
+.footer .menu .about h3 {
+    margin-top: 0;
+}
+.footer .menu ul {
+    list-style-type: none;
+    font-size: 0.75em;
+    font-weight: normal;
+    padding: 0;
+    margin: 12px 0 0;
+    line-height: 1.6;
+}
+.footer .menu li a {
+    display: block;
+    box-sizing: border-box;
+    padding: 4px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.footer .menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer .rights {
+    color: var(--white-color);
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 0 20px;
+}
+@media (min-width: 768px) {
+    .footer .text-menu  {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: var(--large-width);
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px 40px;
+    }
+    .footer .text {
+        flex: 2;
+        padding: 0;
+    }
+    .footer .menu {
+        display: flex;
+        flex: 3;
+        padding: 0;
+    }
+    .footer .menu > div {
+        flex: 1;
+    }
+    .footer .menu > div:not(:first-child) {
+        margin-left: 40px;
+    }
+    .footer .menu h3 {
+        margin: 0;
     }
 }
