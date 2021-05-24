@@ -19,6 +19,9 @@
 /* 폰트 */
 body {
     font-family: sans-serif;
+    overflow: auto;
+    overflow-scrolling: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* 공통 컴포넌트 */
@@ -438,6 +441,7 @@ body {
     z-index: 100;
     background-color: var(--white-color);
     width: 100%;
+    border-bottom: 1px solid var(--gray-color);
 }
 .nav .container .logo {
     display: inline-block;
@@ -516,4 +520,56 @@ body {
 
 
 /* 세붓컨텐츠 페이지 */
-.
+.post {
+    margin-top: 48px;
+}
+.post .container {
+    max-width: var(--middle-width);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 40px 12px;
+}
+.post .bread ol {
+    list-style-type: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.post .bread a {
+    color: var(--black-color);
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 0.75em;
+    font-weight: normal;
+}
+.post .bread a:hover, .post .bread a:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.post .bread a::after {
+    content: "\f054";
+    font-family: "FontAwesome";
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.2);
+}
+.post .container h2 {
+    margin: 24px 0 16px;
+    box-sizing: border-box;
+    padding-left: 6px;
+    font-weight: bold;
+    font-size: 2em;
+    border-left: 6px solid var(--accent-color);
+    color: var(--black-color);
+}
+.post .container img {
+    max-width: 100%;
+}
+.post .container div {
+    margin-top: 16px;
+    line-height: 2;
+    font-size: 0.75em;
+    font-weight: normal;
+    color: var(--black-color);
+}
