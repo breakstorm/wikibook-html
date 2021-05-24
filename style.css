@@ -427,3 +427,89 @@ body {
         margin: 0;
     }
 }
+
+
+/* header 영역 */
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--white-color);
+    width: 100%;
+}
+.nav .container .logo {
+    display: inline-block;
+    line-height: 1;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--white-color);
+}
+.nav ul a {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .nav .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: var(--large-width);
+        margin: 0 auto;
+    }
+    .nav ul {
+        display: flex;
+    }
+    .nav .container .hamburger {
+        display: none;
+    }
+    .nav .container .nav-menu {
+        display: block !important;
+    }
+}
+@media (max-width: 767px) {
+    .nav .container-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav .container button {
+        background-color: transparent;
+        margin-right: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 1.5em;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .nav .container .nav-menu {
+        display: none;
+    }
+    .nav .container button span {
+        text-indent: 4em;
+    }
+    .nav .container button:hover, .nav .container button:active {
+        opacity: 0.3;
+    }
+
+}
