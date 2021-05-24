@@ -8,6 +8,7 @@
     --black-color: #000000;
     --gray-color: #ddd;
     --large-width: 1000px;
+    --middle-width: 800px;
     --mx: 768px;
 }
 
@@ -406,7 +407,7 @@ body {
         max-width: var(--large-width);
         margin: 0 auto;
         box-sizing: border-box;
-        padding: 20px 40px;
+        padding: 20px 0;
     }
     .footer .text {
         flex: 2;
@@ -511,5 +512,8 @@ body {
     .nav .container button:hover, .nav .container button:active {
         opacity: 0.3;
     }
-
 }
+
+
+/* 세붓컨텐츠 페이지 */
+.
